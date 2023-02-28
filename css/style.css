@@ -1,0 +1,110 @@
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --bg: #2ee2d9;
+      --head-bg: #2b2b2b;
+      --well: #cc2020;
+      --text: #e92323;
+      --text-light: #ffffff;
+    }
+  }
+  body {
+    font-size: 1.8rem;
+    line-height: 1.55;
+    color: var(--text);
+    background-color: var(--bg);
+    display: grid;
+    grid-auto-columns: auto;
+    margin: 1em;
+  }
+  button {
+    transition: var(--transition);
+  }
+  header > nav > ul {
+    margin: 0 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0;
+    font-weight: 600;
+  }
+  #main {
+    min-height: 80vh;
+    padding: 2rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  }
+  section{
+    background-image: url("img/record.png");
+  }
+  blockquote{
+    display: flex;
+    flex-direction: left;
+  }
+  .quote {
+    position: relative;
+    padding: .1rem 1rem;
+    border-radius: auto;
+    transition: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(record.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 455px;
+  }
+  .quote > button {
+    position: absolute;
+    padding: .2rem .6rem .4rem .6rem;
+    font-weight: 900;
+    border-radius: 100%;
+    right: .5rem;
+    top: 0;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: var(--text-light);
+    border: 2px solid var(--text-light);
+    opacity: .2;
+  }
+  .quote > button:hover {
+    opacity: 1;
+    background-color: rgba(0,0,0,0.75);
+  }
+  .quote figure {
+    margin: 5.2rem 4rem .5rem 1.6rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  .quote figcaption {
+    text-align: right;
+    font-size: 1.4rem;
+    margin: 0rem 1rem 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .quote > footer {
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: space-between;
+    margin: 1 rem 0 0 0;
+    opacity: 0.5;
+  }
+  body > footer {
+    background-color: var(--head-bg);
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    color: var(--text-light);
+    text-align: center;
+  }
+  .select{
+    text-align: right;
+  }
